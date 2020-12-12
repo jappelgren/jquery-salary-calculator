@@ -4,6 +4,107 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 1rem;
+  border: 5px solid;
+  border-radius: 10px;
+  background-color: rgba(102, 51, 153, 0.4);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-flow: ;
+  background-image: url(./background.jpg);
+  background-position: top;
+  background-size: 100%;
+  min-height: 88vh;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  text-shadow: 0px 2px 4px black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rebeccapurple;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  padding-left: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#total-monthly-cost {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-right: 2.5rem;
+  font-size: 0.8rem;
+  justify-content: ;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  border-radius: 2px;
+  min-width: 300px;
+}
+
+label,
+input,
+#submit-button {
+  height: 2rem;
+  width: 200px;
+  color: white;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  margin: 2px;
+}
+
+.employee-table-container {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+#submit-button {
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-table-container {
+  flex-grow: 2;
+}
+
+#delete {
+  color: #333;
+}
+
+#too-much {
+  background-color: red;
+  color: white;
+}
+
+table {
+  margin-right: 2.5rem;
+}
+
 table,
 td {
   border: 1px solid #333;
