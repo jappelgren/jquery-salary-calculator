@@ -11,7 +11,11 @@
     <title>Salary Calculator</title>
   </head>
   <body>
-    <header><h1>SALARY CALCULATOR</h1>
+    <header>
+        <div id="title-icon">
+        <h1>SALARY CALCULATOR</h1>
+        <img src="./calc.png" id="calc" alt="A small illustration of a calculator">
+        </div>
         <div id="total-monthly-cost">
             <h1>Total Monthly: $0</h1>
         </div>
@@ -21,20 +25,16 @@
         <div class="input-container">
             <h1>Add Employee</h1>
             <input type="text" id="first-name-in" placeholder="First Name" required/>
-            <!-- <label for="first-name-in">First Name</label> -->
+
             <div class="circle">
             </div>
             <input type="text" id="last-name-in" placeholder="Last Name" required/>
-            <!-- <label for="last-name-in">Last Name</label> -->
 
             <input type="text" id="id-in" placeholder="ID" required/>
-            <!-- <label for="id-in">ID</label> -->
 
             <input type="text" id="title-in" placeholder="Title" required/>
-            <!-- <label for="title-in">Title</label> -->
 
             <input type="number" id="salary-in" placeholder="Annual Salary" required/>
-            <!-- <label for="salary-in">Annual Salary</label> -->
 
         <button id="submit-button">Submit</button>
       </div>
@@ -48,7 +48,7 @@
               <th>ID</th>
               <th>Title</th>
               <th>Annual Salary</th>
-              <th id="delete">delete</th>
+              <th><p id="delete-text">hidden</p></th>
             </tr>
             <tbody>
             </tbody>

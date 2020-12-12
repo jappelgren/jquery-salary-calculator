@@ -2,41 +2,49 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
   margin: 1rem;
-  border: 5px solid;
-  border-radius: 10px;
-  background-color: rgba(102, 51, 153, 0.4);
+  background-color: rgba(35, 73, 38, 1);
 }
 
 main {
   display: flex;
   flex-direction: row;
-  flex-flow: ;
-  background-image: url(./background.jpg);
-  background-position: top;
-  background-size: 100%;
+  background-image: url(./background.png);
+  background-position: center;
+  background-size: 200%;
   min-height: 88vh;
 }
 
 h1 {
-  font-family: "Rubik", sans-serif;
-  color: white;
-  text-shadow: 0px 2px 4px black;
+  color: rgba(35, 73, 38, 1);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  background-color: rebeccapurple;
-  color: white;
-  font-size: 1.2rem;
-  letter-spacing: 5px;
+  background-color: #59c262;
+  color: rgba(35, 73, 38, 0.46);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
   padding-left: 2.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+}
+
+#title-icon {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#calc {
+  height: 2.2rem;
+  opacity: 90%;
+  margin-top: 18px;
+  margin-right: 1rem;
 }
 
 #total-monthly-cost {
@@ -44,28 +52,26 @@ header {
   flex-direction: column-reverse;
   padding-right: 2.5rem;
   font-size: 0.8rem;
-  justify-content: ;
+  letter-spacing: 0px;
 }
 
 .input-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(187, 247, 192, 0.2);
   backdrop-filter: blur(5px);
   border: solid 2px transparent;
   background-clip: padding-box;
-  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   min-width: 300px;
 }
 
-label,
 input,
 #submit-button {
   height: 2rem;
   width: 200px;
-  color: white;
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.5);
   display: flex;
@@ -76,29 +82,35 @@ input,
   display: flex;
   flex-direction: column;
   align-content: stretch;
+  margin-left: 2.5rem;
 }
 
 ::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.185);
   text-align: center;
 }
 
 #submit-button {
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
 .employee-table-container {
   flex-grow: 2;
 }
 
-#delete {
-  color: #333;
+#delete-text {
+  visibility: hidden;
 }
 
 #too-much {
-  background-color: red;
+  background-color: tomato;
   color: white;
+  border: solid transparent;
+  padding: 5px;
+  border-radius: 8px;
 }
 
 table {
@@ -107,11 +119,32 @@ table {
 
 table,
 td {
-  border: 1px solid #333;
+  height: 2rem;
+  background-color: rgba(187, 247, 192, 0.2);
+  backdrop-filter: blur(5px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  color: rgba(35, 73, 38, 1);
+  text-align: center;
 }
 
-thead,
-tfoot {
-  background-color: #333;
-  color: #fff;
+thead {
+  background-color: rgba(187, 247, 192, 0.2);
+  backdrop-filter: blur(5px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  height: 2rem;
+  font-size: 1.5rem;
+  color: rgba(35, 73, 38, 1);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(187, 247, 192, 0.2);
+}
+
+.delete-button {
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100px;
 }

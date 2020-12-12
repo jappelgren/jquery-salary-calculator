@@ -32,7 +32,7 @@ function displayEmp() {
             <td>${employee.id}</td>
             <td>${employee.title}</td>
             <td>$${employee.salary}</td>
-            <td><button value="${employees.indexOf(employee)}" class="delete-button">Delete</button><td>
+            <td><button value="${employees.indexOf(employee)}" class="delete-button">Delete</button></td>
             </tr>`)
     }
     if (salaryTotal > 20000) {
