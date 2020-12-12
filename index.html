@@ -14,7 +14,7 @@
     <header>
         <div id="title-icon">
         <h1>SALARY CALCULATOR</h1>
-        <img src="./calc.png" id="calc" alt="A small illustration of a calculator">
+        <img src="./calc.svg" id="calc" alt="A small illustration of a calculator">
         </div>
         <div id="total-monthly-cost">
             <h1>Total Monthly: $0</h1>
@@ -37,6 +37,11 @@
             <input type="number" id="salary-in" placeholder="Annual Salary" required/>
 
         <button id="submit-button">Submit</button>
+
+        <div id=error-box>
+            <div class="tri"></div>
+            <p class="error-message">Please fill out all fields.</p>
+        </div>
       </div>
       <div class="employee-table-container">
         <h1>Employees</h1>
@@ -55,7 +60,6 @@
           </thead>
         </table>
       </div>
-
     </main>
   </body>
 </html>

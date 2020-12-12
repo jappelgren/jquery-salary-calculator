@@ -17,6 +17,7 @@ main {
   background-position: center;
   background-size: 200%;
   min-height: 88vh;
+  overflow: auto;
 }
 
 h1 {
@@ -42,7 +43,7 @@ header {
 
 #calc {
   height: 2.2rem;
-  opacity: 90%;
+  opacity: 80%;
   margin-top: 18px;
   margin-right: 1rem;
 }
@@ -95,6 +96,7 @@ input,
   justify-content: center;
   border-radius: 8px;
   margin-top: 20px;
+  color: rgba(35, 73, 38, 1);
 }
 
 .employee-table-container {
@@ -144,7 +146,31 @@ tr:nth-child(even) {
 
 .delete-button {
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   background-color: rgba(255, 255, 255, 0.5);
   width: 100px;
+}
+
+#error-box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.error-message {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 5px;
+  color: rgba(35, 73, 38, 1);
+}
+
+.tri {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid rgba(255, 255, 255, 0.5);
+  z-index: 2;
 }
