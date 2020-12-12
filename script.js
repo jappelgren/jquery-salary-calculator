@@ -9,6 +9,9 @@ function onReady() {
     $('tbody').on('click', '.delete-button', delEmp)
 } //end onReady
 
+
+//emptyFieldDetector checks to see if all fields are complete before submitting info.
+//Failure to fill out all fields will result in a pop up asking user to fill out all fields.
 function emptyFieldDetector() {
     if ($('#first-name-in').val() === '' || $('#last-name-in').val() === '' || $('#id-in').val() === '' || $('#title-in').val() === '' || $('#salary-in').val() === '') {
         $('#error-box').fadeIn(300, 'linear').delay(5000).fadeOut(300, 'linear')
@@ -18,6 +21,8 @@ function emptyFieldDetector() {
     }
 } //end emptyFieldDetector
 
+
+//addEmp takes data from input fields and stores them as an object in the employees array.
 function addEmp() {
     employees.push(
         {
@@ -32,6 +37,10 @@ function addEmp() {
     displayEmp();
 } //end adddEmp
 
+
+//displayEmp clears table dom and repopulates it with object data from employees array.
+//Function also stores each objects index in the array as a value held in the delete button
+//If monthly total exceeds 20,000 displayEmp changes the background of the text of the total monthly display to red.
 function displayEmp() {
     $('tbody').empty();
     $('#total-monthly-cost').empty();
@@ -53,6 +62,8 @@ function displayEmp() {
 
 } // end displayEmp 
 
+
+//delEmp deletes employee object out of the employee array and updates dom based on that change
 function delEmp() {
     let employeeIndex = $(this).val();
     let salaryDecrease = employees[employeeIndex].salary
