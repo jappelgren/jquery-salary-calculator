@@ -16,7 +16,7 @@ main {
   background-image: url(./background.png);
   background-position: center;
   background-size: 200%;
-  min-height: 88vh;
+  min-height: 90vh;
   overflow: auto;
 }
 
