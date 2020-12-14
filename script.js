@@ -32,7 +32,7 @@ function addEmp() {
             title: $('#title-in').val(),
             salary: Number($('#salary-in').val())
         })
-    salaryTotal += Number($('#salary-in').val());
+    salaryTotal += (Number($('#salary-in').val()) / 12);
     $('input').val('');
     displayEmp();
 } //end adddEmp
@@ -67,7 +67,7 @@ function displayEmp() {
 function delEmp() {
     let employeeIndex = $(this).val();
     let salaryDecrease = employees[employeeIndex].salary
-    salaryTotal -= salaryDecrease
+    salaryTotal -= (salaryDecrease / 12)
     employees.splice(employeeIndex, 1)
 
     displayEmp()
